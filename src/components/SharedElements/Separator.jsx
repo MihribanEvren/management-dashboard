@@ -1,6 +1,6 @@
 const Separator = ({
   orientation = 'horizontal',
-  color = 'bg-darkgray',
+  color = 'bg-gray-300',
   className = '',
 }) => {
   const isHorizontal = orientation === 'horizontal';

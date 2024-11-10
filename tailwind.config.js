@@ -20,6 +20,10 @@ export default {
         linearpink: '#E0C7C4',
         linearblue: '#97adb1',
         linearsomon: '#e9e6ce',
+        firstMember: '#cfcfcf',
+        secondMember: '#51b1b5',
+        thirdMember: '#888eae',
+        fourthMember: '#d77660',
       },
       fontFamily: {
         sans: ['Poppins', 'sans-serif'],

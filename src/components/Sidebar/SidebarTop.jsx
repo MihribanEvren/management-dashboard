@@ -9,7 +9,6 @@ import smallCloud from '../../assets/smallCloud.svg';
 import bigCloud from '../../assets/bigCloud.svg';
 import { useState } from 'react';
 import { Button } from '../ui/button';
-import Separator from '../SharedElements/Separator';
 
 function SidebarTop() {
   const [activeUrl, setActiveUrl] = useState('/');

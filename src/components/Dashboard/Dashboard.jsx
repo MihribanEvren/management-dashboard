@@ -1,5 +1,5 @@
-import DashboardLeft from './DashboardLeft';
-import DashboardRight from './DashboardRight';
+import DashboardLeft from './DashboardLeft/DashboardLeft';
+import DashboardRight from './DashboardRight/DashboardRight';
 
 function Dashboard() {
   return (
