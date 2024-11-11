@@ -4,7 +4,7 @@ import Statistics from './Statistics/Statistics';
 
 function DashboardLeft() {
   return (
-    <div className="flex flex-col items-center justify-start h-full space-y-4 bg-pink-100 basis-2/3">
+    <div className="flex flex-col items-center justify-start h-full space-y-4 basis-2/3">
       {/* banner */}
       <Banner />
 

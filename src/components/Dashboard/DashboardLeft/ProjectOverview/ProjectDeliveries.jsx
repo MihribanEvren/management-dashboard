@@ -25,19 +25,22 @@ const ProjectDeliveries = () => {
   const options = {
     responsive: true,
     maintainAspectRatio: false,
+    interaction: {
+      intersect: false,
+      mode: 'index',
+    },
     scales: {
       x: {
         grid: {
-          display: true,
-          drawBorder: false,
-          drawOnChartArea: true,
-          drawTicks: false,
-          color: '#f1f5f9',
-        },
-        border: {
           display: false,
         },
+        border: {
+          display: true,
+          color: 'black',
+          width: 1,
+        },
         ticks: {
+          color: 'black',
           font: {
             size: 12,
           },
@@ -47,18 +50,20 @@ const ProjectDeliveries = () => {
         min: 0,
         max: 50,
         grid: {
-          drawBorder: false,
-          drawTicks: false,
-          color: '#f1f5f9',
-        },
-        border: {
           display: false,
         },
+        border: {
+          display: true,
+          color: 'black',
+          width: 1,
+        },
         ticks: {
+          color: 'black',
           font: {
             size: 12,
           },
         },
+        stepSize: 10,
       },
     },
     plugins: {
@@ -67,31 +72,36 @@ const ProjectDeliveries = () => {
         align: 'end',
         labels: {
           boxWidth: 8,
+          boxHeight: 8,
           usePointStyle: true,
           pointStyle: 'circle',
+          padding: 20,
+          color: '#475569',
         },
       },
       tooltip: {
-        backgroundColor: 'white',
-        titleColor: '#475569',
-        bodyColor: '#475569',
+        backgroundColor: '#475569',
+        titleColor: '#ffffff',
+        bodyColor: '#ffffff',
         borderColor: '#e2e8f0',
         borderWidth: 1,
-        padding: 12,
-        bodyFont: {
-          size: 12,
-        },
-        titleFont: {
-          size: 12,
+        padding: 8,
+        displayColors: false,
+        callbacks: {
+          label: function (context) {
+            return `${context.dataset.label}: ${context.parsed.y} projects`;
+          },
         },
       },
     },
     elements: {
       line: {
         tension: 0.4,
+        borderWidth: 3,
       },
       point: {
         radius: 0,
+        hoverRadius: 0,
       },
     },
   };
@@ -101,35 +111,29 @@ const ProjectDeliveries = () => {
     datasets: [
       {
         label: 'Target',
-        data: [30, 25, 8, 38, 42, 45],
-        borderColor: '#f97316',
-        backgroundColor: '#f97316',
-        borderWidth: 2.5,
+        data: [28, 10, 10, 18, 18, 25],
+        borderColor: '#F8BD8D',
+        backgroundColor: '#F8BD8D',
         fill: false,
       },
       {
         label: 'Achieved',
-        data: [20, 15, 35, 40, 15, 25],
-        borderColor: '#1e40af',
-        backgroundColor: '#1e40af',
-        borderWidth: 2.5,
+        data: [18, 10, 30, 20, 16, 25],
+        borderColor: '#465F85',
+        backgroundColor: '#465F85',
         fill: false,
       },
     ],
   };
 
   return (
-    <Card className="w-full bg-white">
-      <CardHeader className="pb-2 space-y-0">
-        <CardTitle className="text-lg font-medium">
-          Project deliveries
-        </CardTitle>
-      </CardHeader>
-      <CardContent>
-        <div className="h-[200px] w-full">
-          <Line options={options} data={data} />
-        </div>
-      </CardContent>
+    <Card className="w-full h-64 p-6 bg-white basis-2/3">
+      <div className="flex items-center justify-between">
+        <h3 className="text-lg font-semibold">Project deliveries</h3>
+      </div>
+      <div className="w-full h-48">
+        <Line options={options} data={data} />
+      </div>
     </Card>
   );
 };

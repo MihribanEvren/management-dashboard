@@ -1,5 +1,13 @@
+import Activity from './Activity/Activity';
+import CustomCalendar from './Calendar/CustomCalendar';
+
 function DashboardRight() {
-  return <div className="h-full bg-red-100 basis-1/3">DashboardRight</div>;
+  return (
+    <div className="w-full h-full basis-1/3">
+      <CustomCalendar />
+      <Activity />
+    </div>
+  );
 }
 
 export default DashboardRight;

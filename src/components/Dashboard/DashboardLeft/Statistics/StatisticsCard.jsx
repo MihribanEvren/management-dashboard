@@ -19,7 +19,7 @@ function StatisticsCard({
       </div>
 
       <div className="flex items-center justify-end space-x-6">
-        <TeamMembers members={teamMembers} />
+        <TeamMembers members={teamMembers} width="w-6" height="h-6" />
         <DaysLeft days={days} />
       </div>
     </div>
