@@ -6,6 +6,7 @@ export const activityData = [
     description: 'joined team developers',
     date: '04 April, 2021',
     time: '04:00 PM',
+    color: 'bg-secondary',
   },
   {
     userInitials: 'JH',
@@ -13,6 +14,7 @@ export const activityData = [
     description: 'joined team HR',
     date: '04 April, 2021',
     time: '04:00 PM',
+    color: 'bg-firstMember',
   },
   {
     userInitials: 'AF',
@@ -20,6 +22,7 @@ export const activityData = [
     description: 'got employee of the month',
     date: '03 April, 2021',
     time: '02:00 PM',
+    color: 'bg-secondMember',
   },
   {
     userInitials: 'RP',
@@ -27,6 +30,7 @@ export const activityData = [
     description: 'joined team design',
     date: '02 April, 2021',
     time: '02:00 PM',
+    color: 'bg-thirdMember',
   },
   {
     userInitials: 'JK',
@@ -34,5 +38,6 @@ export const activityData = [
     description: 'joined team design',
     date: '01 April, 2021',
     time: '03:00 PM',
+    color: 'bg-fourthMember',
   },
 ];

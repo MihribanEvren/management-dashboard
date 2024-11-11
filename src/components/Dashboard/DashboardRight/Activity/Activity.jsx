@@ -10,14 +10,7 @@ function Activity() {
       onButtonClick={() => {}}
     >
       {activityData.map((activity, index) => (
-        <ActivityCard
-          key={index}
-          userInitials={activity.userInitials}
-          userName={activity.userName}
-          activityDescription={activity.description}
-          date={activity.date}
-          time={activity.time}
-        />
+        <ActivityCard key={index} activity={activity} />
       ))}
     </ReusableCard>
   );

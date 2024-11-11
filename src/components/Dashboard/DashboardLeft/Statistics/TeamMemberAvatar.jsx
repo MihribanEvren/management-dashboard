@@ -10,7 +10,7 @@ function TeamMemberAvatar({
     <Avatar className={`${width} ${height}`}>
       <AvatarImage src={member?.image} alt={member.name} />
       <AvatarFallback
-        className={`${member.color} ${textSize} font-semibold text-white flex items-center justify-center`}
+        className={`${member?.color} ${textSize} font-semibold text-white flex items-center justify-center`}
       >
         {member.name.charAt(0)}
       </AvatarFallback>
