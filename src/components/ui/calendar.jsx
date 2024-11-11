@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { MdChevronLeft, MdChevronRight } from 'react-icons/md';
 import { DayPicker } from 'react-day-picker';
 
 import { cn } from '@/lib/utils';
@@ -13,9 +13,9 @@ function Calendar({ className, classNames, showOutsideDays = true, ...props }) {
       classNames={{
         months: 'flex flex-col sm:flex-row space-y-4 sm:space-x-4 sm:space-y-0',
         month: 'space-y-4',
-        caption: 'flex justify-between items-center pt-1 px-5 ', // justify-between ile ikonlar ve ay bilgisi hizalanıyor
+        caption: 'flex justify-between items-center pt-1 px-5 ',
         caption_label: 'text-sm font-base ',
-        nav: 'flex items-center space-x-1 ', // İkonları flex ile hizalamak için
+        nav: 'flex items-center space-x-1 ',
         nav_button: cn(
           buttonVariants({ variant: 'outline' }),
           'h-7 w-7 bg-transparent p-0 opacity-50 hover:opacity-100'
@@ -49,8 +49,8 @@ function Calendar({ className, classNames, showOutsideDays = true, ...props }) {
         ...classNames,
       }}
       components={{
-        IconLeft: ({ ...props }) => <ChevronLeft className="w-4 h-4" />,
-        IconRight: ({ ...props }) => <ChevronRight className="w-4 h-4" />,
+        IconLeft: ({ ...props }) => <MdChevronLeft className="w-4 h-4" />,
+        IconRight: ({ ...props }) => <MdChevronRight className="w-4 h-4" />,
       }}
       {...props}
     />
