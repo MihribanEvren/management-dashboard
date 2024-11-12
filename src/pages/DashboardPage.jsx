@@ -1,6 +1,5 @@
 import Dashboard from '@/components/Dashboard/Dashboard';
 import Navbar from '@/components/Navbar/Navbar';
-import Separator from '@/components/SharedElements/Separator';
 import Sidebar from '@/components/Sidebar/Sidebar';
 import { useState } from 'react';
 
