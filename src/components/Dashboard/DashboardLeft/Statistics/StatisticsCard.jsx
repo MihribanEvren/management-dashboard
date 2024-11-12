@@ -18,7 +18,7 @@ function StatisticsCard({
         <ProjectInfo title={title} description={description} />
       </div>
 
-      <div className="flex items-center justify-end space-x-6">
+      <div className="flex items-center justify-end space-x-2 md:space-x-6">
         <TeamMembers members={teamMembers} width="w-6" height="h-6" />
         <DaysLeft days={days} />
       </div>

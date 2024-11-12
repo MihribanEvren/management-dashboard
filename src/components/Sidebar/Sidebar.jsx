@@ -4,7 +4,7 @@ import SidebarTop from './SidebarTop';
 
 function Sidebar() {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col h-full ">
       <SidebarTop />
       <Separator className="mt-2" />
       <SidebarBottom />

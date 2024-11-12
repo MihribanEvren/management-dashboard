@@ -12,36 +12,35 @@ function DashboardPage() {
   };
 
   return (
-    <div className="flex min-h-screen">
-      <div
+    <div className="flex min-h-screen overflow-hidden">
+      {isSidebarOpen && (
+        <div
+          className="fixed inset-0 z-20 bg-black bg-opacity-50 md:hidden"
+          onClick={toggleSidebar}
+        />
+      )}
+
+      <aside
         className={`
-          fixed md:relative
-          ${isSidebarOpen ? 'block' : 'hidden'} md:block
-          w-64 h-full z-50
-          bg-softgray
-          transition-all duration-300 ease-in-out
+          fixed top-0 left-0 h-full w-64 
+          ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'}
+          md:translate-x-0
+          bg-softgray border-r border-gray-200
+          transition-transform duration-300 ease-in-out
+          z-30
         `}
       >
         <div className="h-full overflow-y-auto">
           <Sidebar />
         </div>
-      </div>
+      </aside>
 
-      {isSidebarOpen && (
-        <div
-          className="fixed inset-0 z-40 bg-black bg-opacity-50 md:hidden"
-          onClick={toggleSidebar}
-        />
-      )}
-
-      <Separator orientation="vertical" className="flex-shrink-0" />
-
-      <div className="flex flex-col flex-1 w-full min-w-0">
-        <div className="w-full bg-white">
+      <div className="flex flex-col flex-1 w-full md:pl-64">
+        <header className="sticky top-0 z-10 w-full bg-white border-b border-gray-200">
           <Navbar toggleSidebar={toggleSidebar} isSidebarOpen={isSidebarOpen} />
-        </div>
+        </header>
 
-        <main className="flex-1 px-4 py-4 lg:px-8 bg-softgray">
+        <main className="flex-1 p-4 overflow-y-auto lg:p-8 bg-softgray">
           <Dashboard />
         </main>
       </div>

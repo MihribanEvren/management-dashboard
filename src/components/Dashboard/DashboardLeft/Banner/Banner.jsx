@@ -5,7 +5,6 @@ function Banner() {
     <div className="relative w-full rounded-2xl bg-gradient-to-r from-rose-100 to-blue-100">
       <div className="container mx-auto">
         <div className="flex flex-col items-center px-8 md:gap-8 md:flex-row">
-          {/* Image wrapper with fixed dimensions */}
           <div className="relative w-full h-56 md:1/2 lg:w-1/3">
             <img
               src={banner}
