@@ -3,7 +3,7 @@ import DashboardRight from './DashboardRight/DashboardRight';
 
 function Dashboard() {
   return (
-    <div className="flex items-center justify-center w-full h-full py-4 space-x-4">
+    <div className="flex flex-col space-y-4 lg:space-y-0 lg:flex-row lg:space-x-4">
       <DashboardLeft />
       <DashboardRight />
     </div>

@@ -11,7 +11,7 @@ function Calendar({ className, classNames, showOutsideDays = true, ...props }) {
       showOutsideDays={showOutsideDays}
       className={cn('py-3', className)}
       classNames={{
-        months: 'flex flex-col sm:flex-row space-y-4 sm:space-x-4 sm:space-y-0',
+        months: 'flex flex-col sm:flex-row space-y-4  sm:space-y-0',
         month: 'space-y-4',
         caption: 'flex justify-between items-center pt-1 px-5 ',
         caption_label: 'text-sm font-base ',

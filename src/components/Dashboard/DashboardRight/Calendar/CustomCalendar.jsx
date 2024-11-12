@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Calendar as ShadCalendar } from '@/components/ui/calendar';
+import { Calendar } from '@/components/ui/calendar';
 import {
   IoCalendarOutline,
   IoChevronBackOutline,
@@ -20,7 +20,7 @@ function CustomCalendar() {
         <h2 className="text-lg font-medium">Calendar</h2>
       </div>
 
-      <ShadCalendar
+      <Calendar
         mode="range"
         selected={selectedRange}
         onSelect={handleDateSelect}

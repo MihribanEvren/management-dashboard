@@ -10,7 +10,7 @@ function ActivityCard({ activity }) {
         />
         <div>
           <p className="text-xs font-medium">
-            {activity.userName} {activity.activityDescription}
+            {activity.userName} {activity.description}
           </p>
           <p className="text-[10px] text-gray-500">
             {activity.date} | {activity.time}

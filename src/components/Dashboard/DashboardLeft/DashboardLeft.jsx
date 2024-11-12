@@ -4,14 +4,11 @@ import Statistics from './Statistics/Statistics';
 
 function DashboardLeft() {
   return (
-    <div className="flex flex-col items-center justify-start h-full space-y-4 basis-2/3">
-      {/* banner */}
+    <div className="flex flex-col gap-4 lg:w-2/3">
       <Banner />
 
-      {/* statictics */}
       <Statistics />
 
-      {/* footer */}
       <Footer />
     </div>
   );

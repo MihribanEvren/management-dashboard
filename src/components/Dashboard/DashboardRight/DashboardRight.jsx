@@ -3,7 +3,7 @@ import CustomCalendar from './Calendar/CustomCalendar';
 
 function DashboardRight() {
   return (
-    <div className="w-full h-full basis-1/3">
+    <div className="flex flex-col gap-4 lg:w-1/3">
       <CustomCalendar />
       <Activity />
     </div>
