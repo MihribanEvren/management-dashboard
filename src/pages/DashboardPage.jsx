@@ -11,7 +11,7 @@ function DashboardPage() {
   };
 
   return (
-    <div className="flex min-h-screen overflow-hidden">
+    <div className="flex overflow-x-clip">
       {isSidebarOpen && (
         <div
           className="fixed inset-0 z-20 bg-black bg-opacity-50 md:hidden"
