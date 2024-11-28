@@ -31,7 +31,7 @@ Check out the live demo: [Management Dashboard](https://cheerful-heliotrope-cd3f
 #### 1. Clone the repository:
 
 ```
-git clone https://github.com/mihribanevren/management-dasboard.git
+git clone https://github.com/MihribanEvren/management-dashboard.git
 ```
 
 #### 2. Install dependencies:
