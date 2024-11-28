@@ -1,6 +1,6 @@
 ## 🌟 Management Dashboard with React, Tailwind, and Chart.js
 
-Sleek and responsive _Management Dashboard_ application designed to simplify project and task management. This dashboard is built using React, Tailwind, and Radix UI, providing a modern and user-friendly interface with advanced charting and calendar features.
+Sleek and responsive **Management Dashboard** application designed to simplify project and task management. This dashboard is built using React, Tailwind, and Radix UI, providing a modern and user-friendly interface with advanced charting and calendar features.
 
 ### 🎨 Based on a Figma Design
 
@@ -18,13 +18,13 @@ Check out the live demo: [Management Dashboard](https://cheerful-heliotrope-cd3f
 
 #### Frontend
 
-- React: Building user interface components.
-- Radix UI: Accessible and customizable React primitives.
-- Tailwind: Utility-first CSS framework for modern styling.
+- **React:** Building user interface components.
+- **Radix UI:** Accessible and customizable React primitives.
+- **Tailwind:** Utility-first CSS framework for modern styling.
 
 #### Data Visualization
 
-- Chart.js: Interactive and customizable chart library.
+- **Chart.js:** Interactive and customizable chart library.
 
 ### Installation
 
