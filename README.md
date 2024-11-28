@@ -12,8 +12,8 @@ This project is inspired by a custom Figma design. The goal was to translate a p
 
 Check out the live demo: [Management Dashboard](https://cheerful-heliotrope-cd3f8e.netlify.app/)
 
-![Home Page](./Home.png)
-![Home Page](./Home-2.png)
+![Home Page](./public/Home.png)
+![Home Page](./public/Home-2.png)
 
 ### 🛠️ Tools & Technologies
 
