@@ -1,5 +1,3 @@
-import banner from '@/assets/banner.svg';
-
 function Banner() {
   return (
     <div className="relative w-full rounded-2xl bg-gradient-to-r from-rose-100 to-blue-100">
@@ -7,7 +5,7 @@ function Banner() {
         <div className="flex flex-col items-center px-8 md:gap-8 md:flex-row">
           <div className="relative w-full h-56 md:1/2 lg:w-1/3">
             <img
-              src={banner}
+              src="./banner.png"
               alt="Girl on Calender Image"
               className="absolute h-auto transform -translate-x-1/2 -top-4 left-1/2 md:left-0 md:translate-x-0"
             />

@@ -4,9 +4,6 @@ import { FaPenSquare, FaCalendarAlt, FaCheckSquare } from 'react-icons/fa';
 import { BsChatTextFill } from 'react-icons/bs';
 import { IoMdSettings } from 'react-icons/io';
 import SidebarLink from './SidebarLink';
-import MicrosoftTeamsImage from '../../assets/microsoftTeams.svg';
-import smallCloud from '../../assets/smallCloud.svg';
-import bigCloud from '../../assets/bigCloud.svg';
 import { useState } from 'react';
 import { Button } from '../ui/button';
 
@@ -83,17 +80,17 @@ function SidebarTop() {
         </div>
 
         <img
-          src={MicrosoftTeamsImage}
+          src="./microsoftTeams.png"
           alt="Microsoft Teams Image"
           className="relative z-30 object-cover mx-auto -left-1 -top-20"
         />
         <img
-          src={smallCloud}
+          src="./smallCloud.png"
           alt="Small CLoud"
           className="absolute z-30 top-3 left-3"
         />
         <img
-          src={bigCloud}
+          src="./bigCloud.png"
           alt="Big CLoud"
           className="absolute z-30 right-1 top-12"
         />
